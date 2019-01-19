@@ -1,2 +1,11 @@
+NAME	=	generator
+
+FLAGS	=	-lm
+
 all:
-	gcc main.c -lm
+	gcc -o $(NAME) main.c $(FLAGS)
+
+clean:
+	rm $(NAME)
+
+.PHONY: all clean
